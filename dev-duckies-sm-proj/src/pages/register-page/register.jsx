@@ -8,21 +8,28 @@ export default function Register() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
-    //handles any changes the inputs and saves it to state
+      //checks that email is valid
+    let emailTest = /\S+@\S+\.\S+/.test(email);
+      // checks that passwords match
+    let passwordTest = password === confirmPassword;
+
+      //handles any changes the inputs and saves it to state
     const handleChange = (setState) => (event) => {
       setState(event.target.value);
       console.log(event.target.value)
   };
-    //handles the for submission
-  const handleSubmit = () => {
-  }
 
+      //handles submission
+    const submit = () => { 
+      passwordTest && emailTest ? console.log("logged in!") : console.log("passwords do not match or email is invalid");
+  }
+   
   return(
     <main>
       <div className="card">   
        <div className="card-content">
-       <input
-        className="input"
+      <input
+        className={emailTest ? "input" : "input is-danger"}
         type="text"
         placeholder="Email Address"
         value={email}
@@ -38,7 +45,7 @@ export default function Register() {
           />
 
       <input
-        className="input"
+        className={passwordTest ? "input" : "input is-danger"}
         type="password"
         placeholder="Confirm Password"
         value={confirmPassword}
@@ -47,7 +54,7 @@ export default function Register() {
 
       <button
         className="button is-primary" 
-        onClick={handleSubmit}>Create Account
+        onClick={submit}>Create Account
           </button>        
        </div>
       </div>

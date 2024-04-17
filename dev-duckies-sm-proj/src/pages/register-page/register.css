@@ -1,16 +1,14 @@
 .card {
-    margin: 0 auto;
-    position: relative;
-    width: auto;
-}
-
-.card-container{
-    display:flex;
-    justify-content: center;
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin: auto;
     margin-top: 200px;
 }
 
 .card-content{
     display: flex;
     flex-direction: column;
+    margin: auto;
+
 }
