@@ -1,0 +1,19 @@
+body {
+    background-color: #00d1b2; 
+    min-height: 110vh; 
+  }
+  
+  .login-container {
+    max-width: 300px; 
+    padding: 20px; 
+  }
+  
+  .login-form input {
+    margin-bottom: 10px; 
+  }
+  
+  .login-form button {
+    width: 50%; 
+  }
+  
+  
