@@ -1,11 +1,9 @@
 import './App.css';
+import CreatePost from "./app-wide-components/create-post.jsx"
 function App() {
 return (
 <section className="section">
- <div className="container">
-   <h1 className="title"> Hello World </h1>
-   <p className="subtitle"> My React app  with     <strong>Bulma</strong> </p>
- </div>
+    <CreatePost/>
 </section>
 );
 }
