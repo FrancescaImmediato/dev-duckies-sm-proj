@@ -1,8 +1,8 @@
 // App.js
 import React from "react";
-import Header from "./Header";
+import Header from "../../app-wide-components/Navbar/MobileNav.jsx";
 import Post from "./Post";
-import Sidebar from "./Sidebar";
+import Sidebar from "../../app-wide-components/Navbar/Sidebar.jsx";
 import "./styles.css";
 
 function PublicFeed() {
