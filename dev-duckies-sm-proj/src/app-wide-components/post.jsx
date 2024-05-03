@@ -4,27 +4,27 @@ import React from "react";
 const Post = (props) => {
   return (
     <div className="box">
-      <article className="media">
-        <div className="media-content">
-          <div className="media-left">
-            <figure className="image is-48x48">
-              <img
-                class="is-rounded"
-                src="https://bulma.io/assets/images/placeholders/96x96.png"
-                alt="Placeholder image"
-              />
-            </figure>
-            <br />
-          </div>
-          <div className="content">
-            <p>{props.postContent}</p>
-            <br />
-            <time>
-              {props.date} {props.time}
-            </time>
-          </div>
+      <div className="media m-auto">
+        <div className="media-left">
+          <figure className="image is-48x48">
+            <img
+              class="is-rounded"
+              src="https://bulma.io/assets/images/placeholders/96x96.png"
+              alt="Placeholder image"
+            />
+          </figure>
         </div>
-      </article>
+        <div className="media-content">
+          <p class="title is-4">{props.username}</p>
+        </div>
+      </div>
+      <div className="content">
+        <p>{props.postContent}</p>
+
+        <time>
+          {props.date} {props.time}
+        </time>
+      </div>
     </div>
   );
 };
