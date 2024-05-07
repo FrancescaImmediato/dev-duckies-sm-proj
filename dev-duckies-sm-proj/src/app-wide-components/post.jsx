@@ -1,6 +1,3 @@
-// Post.js
-import React from "react";
-
 const Post = (props) => {
   return (
     <div className="box">
@@ -8,14 +5,14 @@ const Post = (props) => {
         <div className="media-left">
           <figure className="image is-48x48">
             <img
-              class="is-rounded"
+              className="is-rounded"
               src="https://bulma.io/assets/images/placeholders/96x96.png"
               alt="Placeholder image"
             />
           </figure>
         </div>
         <div className="media-content">
-          <p class="title is-4">{props.username}</p>
+          <p className="title is-4">{props.username}</p>
         </div>
       </div>
       <div className="content">

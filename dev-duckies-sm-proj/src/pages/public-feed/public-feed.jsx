@@ -1,29 +1,13 @@
-// App.js
-import React from "react";
 import Header from "../../app-wide-components/Navbar/MobileNav.jsx";
-import Post from "./Post";
-import Sidebar from "../../app-wide-components/Navbar/Sidebar.jsx";
-import "./styles.css";
+import Post from "../../app-wide-components/post.jsx";
+import "../../index.css";
 
 function PublicFeed() {
-  // Sample data for posts
-  const posts = [
-    // { id: 1, user: "User1", content: "This is the first post" },
-    // { id: 2, user: "User2", content: "This is the second post" },
-    // // Add more posts as needed
-  ];
-
   return (
     <div className="App">
       <Header />
       <div className="columns">
-        <div className="column is-4">
-          <Sidebar />
-        </div>
-        <div className="column is-8">
-          {/* {posts.map((post) => (
-            <Post key={post.id} user={post.user} content={post.content} />
-          ))} */}
+        <div className="column is-12">
           <Post
             user="Tommy"
             postContent="Testing 123"
