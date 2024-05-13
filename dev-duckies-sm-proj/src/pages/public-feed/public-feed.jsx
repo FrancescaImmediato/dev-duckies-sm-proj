@@ -15,7 +15,7 @@ function PublicFeed() {
             time="13:14"
           />
           <Post
-            user="Jessie"
+            username="Jessie"
             postContent="Testing 123"
             date="10/3/24"
             time="13:14"
