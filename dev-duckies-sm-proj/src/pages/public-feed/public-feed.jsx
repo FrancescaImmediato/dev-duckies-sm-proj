@@ -9,7 +9,7 @@ function PublicFeed() {
       <div className="columns">
         <div className="column is-12">
           <Post
-            user="Tommy"
+            username="Tommy"
             postContent="Testing 123"
             date="10/3/24"
             time="13:14"
