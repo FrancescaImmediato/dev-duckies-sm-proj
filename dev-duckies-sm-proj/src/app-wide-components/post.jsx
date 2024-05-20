@@ -1,4 +1,11 @@
+import '@fortawesome/fontawesome-free/css/all.css';
+
 const Post = (props) => {
+
+  const handleComment = () =>{
+    console.log('I made a comment!')
+  }
+  
   return (
     <div className="box">
       <div className="media m-auto">
@@ -22,6 +29,22 @@ const Post = (props) => {
           {props.date} {props.time}
         </time>
       </div>
+      <nav className="level is-mobile">
+        <div className="level-left">
+          <a className="level-item" aria-label="comment">
+            <span className="icon is-small">
+              <button className='button is-borderless m-0 p-0' id='comment' onClick={handleComment}>
+                <i className="fas fa-comment"></i>
+              </button>
+            </span>
+          </a>
+          <a className="level-item" aria-label="like">
+            <span className="icon is-small">
+              <i className="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
     </div>
   );
 };
