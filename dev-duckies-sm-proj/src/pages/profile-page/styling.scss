@@ -1,0 +1,37 @@
+@use "bulma/sass/utilities/mixins";
+
+#header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  @include mixins.from(769px) {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding-left: 5%;
+    
+  }}
+
+ #bio-logic{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    padding:0px;
+    @include mixins.from(769px){
+      align-items:flex-start
+    }
+  
+ }
+.bio-and-button{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-left: 5%;
+}
+
+.bio-textarea{
+  width:150px;
+  height:50px;
+  margin-left: 5%;
+}
