@@ -1,9 +1,6 @@
 import  { useState, useEffect } from 'react';
 import Post from "./post.jsx"
 import ProfileNav from "./ProfileNav.jsx"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPen } from '@fortawesome/free-solid-svg-icons'
-import '@fortawesome/fontawesome-free/css/all.css'
 import "./styling.scss"
 export default function ProfilePage() {
   //bellow is the state for my editable bio 

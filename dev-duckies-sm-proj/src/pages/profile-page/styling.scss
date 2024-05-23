@@ -37,7 +37,7 @@
   align-items:center;
   @include mixins.from(769px){
   padding-left:2%;
-  margin-left:-20px;
+  
   max-width:200px;
   }
   
@@ -62,10 +62,11 @@
   width:200px;
   height:50px;
   resize:none;
-  border:none;
+  border:solid gray 1px;
+  border-radius: 10px;
   
 }
-.bio-textarea:focus{
+.bio-textarea :focus{
   width:200px;
   height:50px;
   resize:none;
@@ -89,3 +90,6 @@
 
 .edit-bio{
   flex:0 0 auto;}
+  .upper-section{
+    margin-bottom: 0px;
+  }
