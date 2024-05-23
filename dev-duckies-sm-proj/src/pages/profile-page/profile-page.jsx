@@ -84,7 +84,7 @@ useEffect(() => {
       <div className="card ">
         {/* Navbar and user profile */}
         <ProfileNav/>
-        <div className="card">
+        <div className="upper-section card">
          
 
             <div id="header" className="container ">
@@ -117,59 +117,65 @@ useEffect(() => {
             UserName
           </div>
           </div>
-          </div>    
+            
 
 
             
           {console.log(bio)}
-          <div id="bio-logic" className="container">
+          <div id="bio-logic">
             {isEditing ? (
-              <div id="text-area" className="bio-and-button">
+              <div id="text-area">
               <form onSubmit={handleBioSubmit}>
                 <textarea
-                className= "bio-and-button bio-textarea"
+                className= " bio-textarea"
                   value={bio}
                   onChange={handleBioChange}
                   rows={4}
                   cols={50}
                   style={{ textAlign: 'center'}} // Center-align text
                 />
-                <button type="submit">Save</button> 
+                <div id="text-area-save">
+                <button className="button mt-0"type="submit">Save</button> 
+                </div>
               </form>
               </div>)
              : bio && bio.trim() !== '' ? (
               <>
-
-                <div className="bio-and-button card-content" style={{maxWidth: "300px"}}>
-                  <div className="content" style={{ wordWrap: "break-word", whiteSpace: "normal" }}>
+                <div className="bio-and-button">
+               
+                  <div className="content bio-text">
                   {bio}
                   </div>
+                  <button onClick={handleBioClick}  className="edit-bio button" style={{ margin: 0 }}>Edit Bio</button>
+               
                 </div>
               
              
-                  <button onClick={handleBioClick} id="edit-bio" className="button" style={{ margin: 0 }}>Edit Bio</button>
+                  
                 
               </>
             ) : (
               <>
               
-                <div className="bio-and-button card-content" style={{maxWidth: "300px"}}>
+                <div className="bio-and-button card-content">
                   <div className="content" style={{ wordWrap: "break-word", whiteSpace: "normal" }}>
                   Tell us about yourself...
                   </div>
                     
-                      <button onClick={handleBioClick} id="edit-bio" className="button" style={{ margin: 0 }}>Edit Bio</button>
+                      <button onClick={handleBioClick} className="edit-bio button" style={{ margin: 0 }}>Edit Bio</button>
                     
                 </div>
              
               
               </>
             )}
+            
           </div>
+          </div> 
           
         </div>
         <div className= "container ">
-            <div className="box is-scrollable has-background-light m-0" style={{maxHeight:"450px", overflow:"scroll"}}>
+            <div id="feed-background"className=" box is-scrollable m-0" style={{maxHeight:"450px", overflow:"scroll"}}>
             <Post
             user="Tommy"
             postContent="Testing 123"
