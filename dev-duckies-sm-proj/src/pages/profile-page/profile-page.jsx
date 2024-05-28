@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import Post from "./post.jsx"
+import Post from "../../app-wide-components/post.jsx"
 import ProfileNav from "./ProfileNav.jsx"
 import "./styling.scss"
 export default function ProfilePage() {
