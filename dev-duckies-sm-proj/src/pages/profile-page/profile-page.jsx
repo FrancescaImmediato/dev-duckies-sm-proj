@@ -39,11 +39,11 @@ export default function ProfilePage() {
       const handleProfilePicChange = () => {
     
         const storedProfilePic = localStorage.getItem("profilePic");
+        const profilePic = document.getElementById("profile-pic");
         if (storedProfilePic) {
           // Set the profile picture source
-          const profilePic = document.getElementById("profile-pic");
           profilePic.src = JSON.parse(storedProfilePic);
-        } else{prfilePic.src= "./default-profile.png"}
+        } else{profilePic.src= "./default-profile.png"}
       }
     },[])
   // const handleProfilePicChange = () => {
