@@ -18,7 +18,7 @@ export default function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('http://localhost:8080/auth/login', {email, password})
-    .then(res => {navigate('home/feed')})
+    .then(res => {navigate('/')})
     .catch(error => {console.log(error.response.data.error)})
   };
 
