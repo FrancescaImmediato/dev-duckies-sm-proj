@@ -86,7 +86,7 @@ useEffect(() => {
 
             <div id="header" className="container ">
             <div id="profile-pic-and-username" className="block">
-            <figure className="image is-128x128 is-square mr-5 ml-3" style={{ objectFit: 'cover', width: '128px', height: '128px' }}>
+            <figure className="image is-128x128 is-square mr-3 ml-3" style={{ objectFit: 'cover', width: '128px', height: '128px' }}>
             
               <img 
               id= "profile-pic" 
@@ -110,7 +110,7 @@ useEffect(() => {
             
           </button>
          
-          <div className= "is-size-3">
+          <div className= "is-size-3" style={{marginTop: "50px"}}>
             UserName
           </div>
           </div>
