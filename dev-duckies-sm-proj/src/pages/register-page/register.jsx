@@ -55,7 +55,7 @@ export default function Register() {
       )
     ) {
       if (!passwordTest) {
-        return setError("Passwords do not match OR password is too short (6 character min)");
+        return setError("Passwords do not match OR password is too short (7 character min)");
       }
       return setError("Please ensure all fields are valid.");
     }
